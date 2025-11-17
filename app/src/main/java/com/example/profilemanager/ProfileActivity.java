@@ -15,7 +15,7 @@ import java.util.HashMap;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private HashMap<Integer, String> drawables;
+    private HashMap<Integer, Integer> drawables;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,15 +34,17 @@ public class ProfileActivity extends AppCompatActivity {
                 R.id.attentive_loaf, R.id.awestruck, R.id.crashout, R.id.grumpy, R.id.sleepy2, R.id.mad,
                 R.id.peaceful_loaf, R.id.sad, R.id.sitting, R.id.hungry, R.id.polite, R.id.sleepy };
 
-        String[] drawableNames = {
-                "attentive_loaf", "awestruck", "crashout", "grumpy", "sleepy2", "mad",
-                "peaceful_loaf", "sad", "sitting", "hungry", "polite", "sleepy"};
+        int[] drawableIDs = {
+                R.drawable.attentive_loaf, R.drawable.awestruck, R.drawable.crashout, R.drawable.grumpy,
+                R.drawable.sleepy2, R.drawable.mad, R.drawable.peaceful_loaf, R.drawable.sad,
+                R.drawable.sitting, R.drawable.hungry, R.drawable.polite, R.drawable.sleepy
+        };
 
         // Saves the corresponding drawable name to each ID in a map
         drawables = new HashMap<>();
         for (int i = 0; i < imageIDs.length; i++) {
             findViewById(imageIDs[i]).setOnClickListener(this::setCatIcon);
-            drawables.put(imageIDs[i], drawableNames[i]);
+            drawables.put(imageIDs[i], drawableIDs[i]);
         }
     }
 
@@ -50,12 +52,12 @@ public class ProfileActivity extends AppCompatActivity {
         // Only allows images to call method
         if (!(view instanceof ImageView selectedImage)) return;
 
-        String drawableName = drawables.get(selectedImage.getId());
-        if (drawableName == null) return;
+        Integer drawableID = drawables.get(selectedImage.getId());
+        if (drawableID == null) return;
 
         // Adds drawableName to extra and finishes activity
         Intent returnIntent = new Intent();
-        returnIntent.putExtra("drawableName", drawableName);
+        returnIntent.putExtra("drawableID", drawableID);
 
         setResult(RESULT_OK, returnIntent);
         finish();

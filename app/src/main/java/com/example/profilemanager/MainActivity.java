@@ -49,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent data = result.getData();
                 assert data != null;
 
-                String drawableName = data.getStringExtra("drawableName");
-                int resID = getResources().getIdentifier(drawableName, "drawable", getPackageName());
+                int resID = data.getIntExtra("drawableID", R.drawable.default_cat);
                 catImage.setImageResource(resID);
             }
         });
