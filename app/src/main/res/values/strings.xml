@@ -43,4 +43,10 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="cat_delivery_system">Cat Delivery System</string>
+    <string name="name_your_cat">Name Your Cat</string>
+    <string name="cat_name">Cat Name</string>
+    <string name="enter_a_delivery_address">Enter a Delivery Address or Postal Code</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="open_in_google_maps">Open in Google Maps</string>
 </resources>

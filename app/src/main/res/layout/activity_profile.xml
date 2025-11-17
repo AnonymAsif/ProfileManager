@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectTitle">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/attentive_loaf"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/attentive_loaf" />
+
+            <ImageView
+                android:id="@+id/awestruck"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/awestruck" />
+
+            <ImageView
+                android:id="@+id/crashout"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/crashout" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/grumpy"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/grumpy" />
+
+            <ImageView
+                android:id="@+id/sleepy2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sleepy2" />
+
+            <ImageView
+                android:id="@+id/mad"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/mad" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/peaceful_loaf"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/peaceful_loaf" />
+
+            <ImageView
+                android:id="@+id/sad"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sad" />
+
+            <ImageView
+                android:id="@+id/sitting"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sitting" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/hungry"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/hungry" />
+
+            <ImageView
+                android:id="@+id/polite"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/polite" />
+
+            <ImageView
+                android:id="@+id/sleepy"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/sleepy" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/selectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Select A Cat"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
